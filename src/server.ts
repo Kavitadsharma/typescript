@@ -33,8 +33,8 @@ app.use('/order',orderRouter)
 // razorpay//
 
 const razorpayInstance = new Razorpay({
-  key_id: "rzp_test_mY8Rmn8GDfHLG0",
-  key_secret:"tX0Vugl7JUMnS5XtePHxB6pR"
+  key_id: process.env.key_id,
+  key_secret:process.env.key_secret
 
 });
 
